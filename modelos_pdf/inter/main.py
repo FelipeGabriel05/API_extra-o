@@ -3,7 +3,7 @@ from pymongo.server_api import ServerApi
 from .template import Inter
 
 def Verifica_colecao(nome_colecao):
-    uri = "mongodb+srv://felipegabrielgb271:felipe123@cluster0.rsejnr3.mongodb.net/?retryWrites=true&w=majority"
+    uri = "mongodb+srv://email:password@cluster0.rsejnr3.mongodb.net/?retryWrites=true&w=majority"
     client = MongoClient(uri, server_api=ServerApi('1')) 
     db = 'corretagem_db'
     colecoes = client[db].list_collection_names()
@@ -15,7 +15,7 @@ def Verifica_colecao(nome_colecao):
 
 
 def Main_inter(file, file_name):
-    uri = "mongodb+srv://felipegabrielgb271:felipe123@cluster0.rsejnr3.mongodb.net/?retryWrites=true&w=majority"
+    uri = "mongodb+srv://email:password@cluster0.rsejnr3.mongodb.net/?retryWrites=true&w=majority"
     client = MongoClient(uri, server_api=ServerApi('1'))
 
     try:
