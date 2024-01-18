@@ -86,8 +86,8 @@ DATABASES = {
         'ENFORCE_SCHEMA': False,
         'CLIENT': {
             'host': 'mongodb+srv://cluster0.rsejnr3.mongodb.net',
-            'username': 'felipegabrielgb271',
-            'password': 'felipe123',
+            'username': 'your username',
+            'password': 'your password',
             'authMechanism': 'SCRAM-SHA-1',
         }
     }
