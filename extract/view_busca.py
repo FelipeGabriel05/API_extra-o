@@ -12,7 +12,7 @@ import json
 class DocumentsView(APIView):
     def get(self, request, collection_url, format=None):
         try:
-            uri = "mongodb+srv://felipegabrielgb271:felipe123@cluster0.rsejnr3.mongodb.net/?retryWrites=true&w=majority"
+            uri = "mongodb+srv://your_email:your_password@cluster0.rsejnr3.mongodb.net/?retryWrites=true&w=majority"
             client = MongoClient(uri, server_api=ServerApi('1'))   
             db = client['corretagem_db']
             collection = db[collection_url]
@@ -39,7 +39,7 @@ class ObjectIdEncoder(json.JSONEncoder):
 class DocumentView(APIView):
     def get(self, request, collection_url, object_id_url=None, format=None):
         try:
-            uri = "mongodb+srv://felipegabrielgb271:felipe123@cluster0.rsejnr3.mongodb.net/?retryWrites=true&w=majority"
+            uri = "mongodb+srv://your_email:your_password@cluster0.rsejnr3.mongodb.net/?retryWrites=true&w=majority"
             client = MongoClient(uri, server_api=ServerApi('1'))   
             db = client['corretagem_db']
             collection = db[collection_url]
@@ -61,7 +61,7 @@ class DocumentView(APIView):
             fields_to_update = request.data
             
             if fields_to_update:
-                uri = "mongodb+srv://felipegabrielgb271:felipe123@cluster0.rsejnr3.mongodb.net/?retryWrites=true&w=majority"
+                uri = "mongodb+srv://your_email:your_password@cluster0.rsejnr3.mongodb.net/?retryWrites=true&w=majority"
                 client = MongoClient(uri, server_api=ServerApi('1'))   
                 db = client['corretagem_db']
                 collection = db[collection_url]
@@ -93,7 +93,7 @@ class DocumentView(APIView):
         
     def delete(self, request, collection_url, object_id_url, formate=None):
         try:
-            uri = "mongodb+srv://felipegabrielgb271:felipe123@cluster0.rsejnr3.mongodb.net/?retryWrites=true&w=majority"
+            uri = "mongodb+srv://your_email:your_password@cluster0.rsejnr3.mongodb.net/?retryWrites=true&w=majority"
             client = MongoClient(uri, server_api=ServerApi('1'))   
             db = client['corretagem_db']
             collection = db[collection_url]
