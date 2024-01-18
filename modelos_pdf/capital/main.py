@@ -4,7 +4,7 @@ from .extracaoTotal import Extract
 
 
 def Verifica_colecao(name_colection):
-    uri = "mongodb+srv://felipegabrielgb271:felipe123@cluster0.rsejnr3.mongodb.net/?retryWrites=true&w=majority"
+    uri = "mongodb+srv://email:password@cluster0.rsejnr3.mongodb.net/?retryWrites=true&w=majority"
     client = MongoClient(uri, server_api=ServerApi('1'))
     db = 'corretagem_db'
     colecoes = client[db].list_collection_names()
@@ -15,7 +15,7 @@ def Verifica_colecao(name_colection):
         return False
 
 def Main_capital(file, file_name):
-    uri = "mongodb+srv://felipegabrielgb271:felipe123@cluster0.rsejnr3.mongodb.net/?retryWrites=true&w=majority"
+    uri = "mongodb+srv://email:password@cluster0.rsejnr3.mongodb.net/?retryWrites=true&w=majority"
     client = MongoClient(uri, server_api=ServerApi('1'))    
 
     try:
